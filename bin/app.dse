@@ -1,0 +1,11 @@
+var num1 = 10;
+var num2 = 15;
+var result = num1 * num2 + 10;
+print result; // the output is 160
+
+// This is a single-line comment because I'm too lazy to write multiple lines.
+
+var msg = "Hello World!";
+print msg;
+
+print "Well Done!";
