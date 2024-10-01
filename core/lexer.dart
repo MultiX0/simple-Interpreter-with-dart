@@ -15,6 +15,14 @@ enum TokenType {
   equals,
   semicolon,
   comment,
+  function,
+  lparen,
+  rparen,
+  comma,
+  lbrace,
+  rbrace,
+  lbracket,
+  rbracket,
 }
 
 class Token {
@@ -59,6 +67,17 @@ class Lexer {
 
     if (currentChar == '=') return Token(TokenType.equals, input[position++]);
 
+    if (currentChar == '(') return Token(TokenType.lparen, input[position++]);
+    if (currentChar == ')') return Token(TokenType.rparen, input[position++]);
+
+    if (currentChar == '{') return Token(TokenType.lbrace, input[position++]);
+    if (currentChar == '}') return Token(TokenType.rbrace, input[position++]);
+
+    if (currentChar == '[') return Token(TokenType.lbracket, input[position++]);
+    if (currentChar == ']') return Token(TokenType.rbracket, input[position++]);
+
+    if (currentChar == ',') return Token(TokenType.comma, input[position++]);
+
     if (currentChar == '"') {
       position++;
       StringBuffer stringBuffer = StringBuffer();
@@ -97,6 +116,7 @@ class Lexer {
 
       if (identifier == 'print') return Token(TokenType.print, 'print');
       if (identifier == 'var') return Token(TokenType.variable, 'var');
+      if (identifier == 'func') return Token(TokenType.function, 'func');
 
       return Token(TokenType.identifier, identifier);
     }

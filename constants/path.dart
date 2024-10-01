@@ -1,3 +1,3 @@
 class Paths {
-  static const appPath = 'YOU FOLDER PATH WHERE IS THE FILE (.dse)';
+  static const appPath = '/home/multix/Desktop/Dev/dart_projects/interpreter_app/bin';
 }
