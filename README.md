@@ -20,7 +20,7 @@ This repository contains a basic interpreter written in Dart. It includes a lexe
 The interpreter expects a `.dse` file as input. You can run the interpreter using the following command:
 
 ```bash
-dart run lib/main.dart
+dart run bin/interpreter_app.dart
 ```
 
 Place your `.dse` file in the appropriate path (as defined in `Paths.appPath`) and ensure the file has valid syntax. The interpreter will read the file, tokenize the content, parse the tokens, and execute the resulting commands.
