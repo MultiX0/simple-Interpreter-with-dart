@@ -1,6 +1,10 @@
-func foo = (num1,num2) {
-  print num1;
-  print num2;
-};
+var x = 10;
+var y = 20;
+print x + y;
+print "Hello, World!";
 
-foo(10,20);
+func add = (a, b) {
+  print a;
+  print b;
+};
+add(5, 3);
