@@ -69,6 +69,27 @@ finished in 0.004s
 | `semicolon` | `;` statement terminator      |
 | `comment`   | Comments (`//` style)         |
 
+## Functions
+
+The interpreter supports simple function definitions and invocations.
+
+### Example:
+
+```plaintext
+func testFunc = (a, b) {
+  print a;
+  print b;
+};
+
+testFunc(5, 3);
+```
+
+In this example, the function `testFunc` takes two arguments, `a` and `b`, and print their one by one.
+
+### Supported Features:
+- Function definition using the `func` keyword.
+- Parameterized function calls.
+
 ## Requirements
 
 - Dart SDK
